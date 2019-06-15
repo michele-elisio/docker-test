@@ -1,7 +1,7 @@
 #EXISTING
 
-FROM alpine
+FROM node:6.14
 
-RUN apk add --update redis
+RUN npm install
 
-CMD ["redis-server"]
+CMD ["npm", "start"]
